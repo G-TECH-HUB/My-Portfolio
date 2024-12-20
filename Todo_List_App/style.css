@@ -1,0 +1,174 @@
+/* CSS Reset */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}  
+
+/* Colors */
+:root {
+   --backgroundColor: #000430;
+   --secondBackgroundColor: #171c48;
+   --textColor: white;
+   --purpleColor: #828dff;
+   --tealColor: #24feee;
+}
+
+body {
+   background-color: var(--backgroundColor);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* height: 50vh; */
+   padding: 0px 10px;
+}
+
+.todo-container {
+   background-color: var(--secondBackgroundColor);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: 10px;
+   max-width: 100%;
+   margin-top: 20px;
+}
+
+.status-container {
+   padding: 20px;
+   border-radius: 10px;
+   border: 2px solid var(--purpleColor);
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   color: var(--textColor);
+   gap: 20px;
+}
+.heading-text-container {
+   width: 100%;
+}
+
+.progress-bar {
+   background-color:var(--backgroundColor);
+   height: 10px;
+   width: 100%;
+   margin-top: 30px;
+   border-radius: 10px;
+}
+
+.progress {
+   background-color: var(--tealColor);
+   width: 90%;
+   height: 100%;
+   border-radius: 10px;
+   transition: all 1s ease;
+}
+
+.number-circle {
+   border: 3px solid var(--tealColor);
+   border-radius: 50%;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#numbers {
+   font-size: 2rem;
+}
+
+
+form {
+   margin: 20px 0px 0px 0px;
+   width: 100%;
+   padding: 5px;
+   display: flex;
+   gap: 10px;
+}
+
+#input-task {
+   background-color: var(--secondBackgroundColor);
+   border: 1px solid var(--purpleColor);
+   padding: 10px;
+   color: var(--textColor);
+   border-radius: 5px;
+   font-size: 1.1rem;
+   width: 100%;
+   outline: none;
+   
+}
+
+#add-task {
+   padding: 0px 10px;
+   font-size: 1.7rem;
+   border-radius: 10px;
+   background-color: var(--purpleColor);
+   border: none;
+   color: var(--textColor);
+   outline: none;
+   font-weight: bold;
+   transition: all 0.1s ease-in-out;
+}
+
+#add-task:active {
+   background-color: rgb(77, 77, 248);
+   transform: scale(1.2);
+}
+.bx-task {
+   cursor: pointer;
+}
+
+.task-list-container {
+   margin-top: 10px;
+   padding: 7px;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.233);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 0 10px rgba(0, 120, 233, 0.575);
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   align-items: center;
+}
+.tasks {
+   display: flex;
+   width: 100%;
+   color: var(--textColor);
+   align-items: center;
+   border: 2px solid var(--tealColor);
+   padding: 5px;
+   gap: 15px;
+}
+
+#task-list {
+  list-style: none;
+  
+}
+
+#delete {
+   font-size: 1.2rem;
+   font-weight: bolder;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   padding: 1px 8px;
+}
+
+.action-button {
+   display: flex;
+   flex-direction: row;
+   gap: 9px;
+}
+
+.bxs-edit {
+   color: white;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+.bxs-trash {
+   color: red;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
