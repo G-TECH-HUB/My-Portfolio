@@ -2,7 +2,19 @@
 const openMenu = document.querySelector('.bxs-up-arrow-alt');
 const closeMenu = document.querySelector('.bxs-down-arrow-alt');
 const navBox = document.querySelector('.nav-box');
+const linksBtn = document.querySelectorAll('.links');
 
+/* body.addEventListener('touchstart', (event) => {
+   if(!navBox.contains(event.target)){
+      navBox.classList.remove('show');
+   }
+}); */
+linksBtn.forEach((link) => {
+   link.addEventListener('click', () => {
+      console.log('clicked')
+      navBox.classList.remove("show");
+   })
+})
 openMenu.addEventListener('click', () => {
    navBox.classList.toggle('show');
 })
