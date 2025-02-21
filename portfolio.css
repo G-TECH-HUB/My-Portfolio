@@ -72,8 +72,8 @@ header {
    transition:  0.2s ease-in-out;
    width: 100%;
    /* height: 100vh; */
-   background-color: rgba(0, 0, 0, 0);
-   backdrop-filter: blur(10px);
+   background-color: rgba(136, 132, 132, 0.979);
+   /* backdrop-filter: blur(100px); */
    border-bottom-right-radius: 20px;
    border-bottom-left-radius: 20px;
    border: 1px solid 
@@ -95,6 +95,7 @@ nav li {
    border-bottom-right-radius: 50%;
    margin-top: 10px;
    font-size: 20px;
+   z-index: 1;
 }
 
 nav li:active {
@@ -141,6 +142,11 @@ ul li, a{
    background-color: rgba(65, 65, 65, 0.205);
    backdrop-filter: blur(10px);
    border-radius: 10px;
+/*    position: fixed;
+   top: 15px;
+   right: 10px;
+   z-index: 1; */
+
 }
 
 .close-menu {
@@ -171,15 +177,45 @@ ul li, a{
    border-radius: 50%;
    box-shadow: 0 0 10px #fd6225d7;
    margin-bottom: 10px;
-}  
+   animation-name: show-photo;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+} 
+
+@keyframes show-photo {
+   from {
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+   }to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+   }
+}
 
 .intro {
    color: white;
 }
 
+#hello {
+   animation: service-entry both;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 2s;
+}
+
 .name {
    color: #fd6225;
    padding-bottom: 5px;
+   animation-name: name;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+}
+@keyframes name {
+   from {
+      opacity: 0;
+   }to {
+      opacity: 1;
+   }
 }
 
 .hero-buttons {
@@ -196,6 +232,9 @@ ul li, a{
    border-radius: 5px;
    padding: 10px;
    transition: 0.09s ease-in-out;
+   animation-name: name;
+   animation-duration: 2s;
+   animation-timing-function: ease-in-out;
 }
 
 #hire-me:active {
@@ -210,6 +249,9 @@ ul li, a{
    border:  2px solid white; 
    padding: 7px;
    border-radius: 5px;
+   animation-name: name;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
 }
 
 
@@ -234,10 +276,33 @@ ul li, a{
 }
 #about-h1 {
    color: #fd6225;
+   animation: show-text both;
+   animation-timeline: view(70% 5%);
+   animation-duration: 30s;
+}
+@keyframes show-text {
+   from {
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+   }to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+   }
 }
 #about-content {
    letter-spacing: 1px;
    padding-top: 10px;
+   animation: show-content both;
+   animation-timeline: view(70% 5%);
+}
+@keyframes show-content {
+   from {
+      opacity: 0;
+      transform:  scale(0.3)
+   }to {
+      opacity: 1;
+      transform:  scale(1);
+   }
 }
 
 #download-cv {
@@ -275,6 +340,9 @@ ul li, a{
    width: 80%;
    padding-bottom: 5px;
    padding-top: 5px;
+      animation: service-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
 }
 .progress-container {
    width: 100%;
@@ -282,12 +350,18 @@ ul li, a{
    background-color: #000000f1;
    border-radius: 10px;
    overflow: hidden;
+   animation: service-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
 }
 .progress {
    height: 100%;
    background-color: #fd6225;
    border-radius: 10px;
    width: 80%;
+   animation: boxes-text-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
 }
 
 
@@ -321,8 +395,20 @@ ul li, a{
    border-radius: 20px;
    background-color: rgb(12, 12, 12);
    border: 1px solid #fd6225ce;
+   animation: service-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
 }
 
+@keyframes service-entry {
+   from {
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+   }to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+   }
+}
 .figure {
    display: flex;
    flex-direction: column;
@@ -356,6 +442,9 @@ ul li, a{
    font-weight: lighter;
    padding-top: 5px;
    text-align: center;
+   animation: service-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
 }
 
 #caption {
@@ -388,6 +477,33 @@ ul li, a{
    color: white;
    display: flex;
    padding-bottom: 10px;
+   animation: portfolio-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
+}
+
+#boxes-text {
+   animation: boxes-text-entry ease-in-out both;
+   animation-timeline: view();
+   animation-range: entry 50% cover 50%;
+}
+@keyframes portfolio-entry {
+   from {
+      opacity: 0;
+      transform: translateX(100px) scale(0.3);
+   }to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+   }
+}
+@keyframes boxes-text-entry {
+   from {
+      opacity: 0;
+      transform: translateX(-200px) scale(0.3);
+   }to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+   } 
 }
 
 .contact-section {
@@ -401,6 +517,8 @@ ul li, a{
    align-items: center;
    color: #fd6225;
    column-gap: 10px;
+   animation: service-entry ease-in-out both;
+   animation-timeline: view(70% 5%);
 }
 
 #contact-icon {
@@ -412,17 +530,23 @@ ul li, a{
    width: 30px;
    height: 30px;
    color: white;
+   animation: boxes-text-entry ease-in-out both;
+   animation-timeline: view(100% 5%);
 }
 
 .tel a {
    color: white;
    text-decoration: none;
+   animation: boxes-text-entry ease-in-out both;
+   animation-timeline: view(70% 5%);
 }
 
 .contact-form {
    display: flex;
    justify-content: center;
    text-align: center;
+      animation: service-entry ease-in-out both;
+   animation-timeline: view(90% 5%);
 }
 
 #input {
@@ -473,6 +597,11 @@ ul li, a{
    padding: 5px;
    border-radius: 5px;
    margin-top: 4px;
+}
+
+#footer-message {
+   animation: service-entry ease-in-out both;
+   animation-timeline: view(70% 5%);
 }
 
 footer {
