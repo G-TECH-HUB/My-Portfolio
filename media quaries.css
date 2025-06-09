@@ -1,0 +1,327 @@
+/* All Media Queries */
+
+/* Media for 360px -   mobile display */
+@media only screen and (min-width: 700px) and (max-width: 3000px) {
+  header {
+    height: 100vh;
+    background-image: url(images/luxury\ gaming\ room\ setup.jpeg);
+    background-size: cover;
+  }
+
+  .banner-section {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.226);
+  }
+
+  #logo {
+    width: 120%;
+  }
+
+  .bxs-down-arrow-alt {
+    display: none;
+  }
+
+  .bxs-up-arrow-alt {
+    display: none;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  /* Display the nav box horizontally */
+  .nav-box {
+    position: relative;
+    top: 0;
+    transform: none;
+    transition: none;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: none;
+    border: none;
+    padding: 0px;
+  }
+
+  /* Style the navigation menu */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+    border-style: none;
+    border-radius: none;
+  }
+
+  /* Style the navigation menu items */
+  nav li {
+    display: inline-block;
+    margin-right: 0px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+
+  /* Style the navigation menu links */
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100vh;
+    line-height: 50px;
+    margin: 0px;
+  }
+
+  .my-photo {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fd6225d7;
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    padding: 0px;
+  }
+
+  .about-section {
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    padding-bottom: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 60px;
+    padding-top: 20px;
+  }
+
+  .about-container {
+    padding-top: 0px;
+    width: 90%;
+    padding-left: 10px;
+  }
+  #about-content {
+    text-align: left;
+  }
+
+  .about-text {
+    text-align: left;
+    padding-top: 0px;
+  }
+  .hr-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .hr-line-1 {
+    height: 2px;
+    width: 70px;
+    border: none;
+    background-color: white;
+  }
+
+  .skills-container {
+    padding-top: 0px;
+    padding-right: 10px;
+    width: 90%;
+    margin-top: 0px;
+  }
+  .skill-progress-container {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .skill-progress-box {
+    padding: 0px 10px;
+  }
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .services-list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 18px;
+    border-radius: 20px;
+    background-color: rgb(12, 12, 12);
+    border: 1px solid #fd6225ce;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+  }
+
+
+
+  #boxes img,
+  #boxes-text {
+    width: 230px;
+    padding-right: 50px;
+    border-radius: 50%;
+  }
+
+  .contact-section {
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 30px 5px;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fd6225;
+    column-gap: 10px;
+    animation: none;
+  }
+
+  .contact-options {
+    padding-left: 10px;
+  }
+
+  #contact-icon {
+    border: 2px solid #fd6225;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    animation: none;
+  }
+
+  .tel a {
+    color: white;
+    text-decoration: none;
+    animation: none;
+  }
+
+  #input {
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+  }
+
+  #message {
+    margin-bottom: 5px;
+    width: 80%;
+    height: 40%;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+  }
+  #footer-message {
+    max-width: 50%;
+    margin: 10px auto;
+  }
+  #contact-form {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .contact-form {
+    width: 40%;
+    padding-top: 30px;
+  }
+
+  #submit {
+    background-color: #fd6225;
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 4px;
+  }
+
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -60px;
+  }
+
+  footer {
+    background-color: black;
+    color: #fd6225;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    padding: 0px 5px 0px 5px;
+  }
+  .socials-icons a {
+    padding-right: 5px;
+    padding-top: 5px;
+    color: #fd6225;
+  }
+
+  .tel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copy {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+    padding-left: 5px;
+  }
+}

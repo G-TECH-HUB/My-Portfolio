@@ -1,0 +1,2167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif; 
+}
+
+header{
+    background-image: linear-gradient(rgb(240, 240, 7), rgb(243, 153, 153));
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+   top: 0;
+   z-index: 9;
+}
+.contact-button {
+    display: none;
+}
+.contact-house {
+    display: none;
+}
+#rest-name{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.logo {
+    width: 6rem;
+
+    height: auto;
+}
+.logo-box {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.links-container {
+    display: flex;    
+}
+    .links-container{
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+     
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       right: 0;
+       z-index: 9;
+    }
+    .links-container{
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -110%;
+    z-index: 10;
+    width: 250px;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    transition:0.50s ease-in-out;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: block;
+}
+.open-sidebar-button{
+    display: flex;
+    justify-content: flex-end;
+}
+    nav {
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+     .links-container a {
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition:0.09s ease-out;
+        color: white; 
+        background-color: none;
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    nav a:active, :focus {
+        background-color: orangered;
+        width: 100%;
+       
+    }
+
+    
+    .bx-menu, .bx-x {
+        color: white;
+        font-size: 3.5rem;
+    }
+    #sidebar-active {
+        display: none;
+    }
+    .open-sidebar-button, .close-sidebar-button {
+        display: block;
+        padding: 20px;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+     
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       right: 0;
+       z-index: 9;
+    }
+    #sidebar-active {
+    display: none;
+    }
+
+    /* <-----Home section------> */
+.section1{
+    background-image: url(images/img.hero.jpg.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+.main-box{
+    margin-top: 0px;
+    padding: 0px 0px 10px 5px;
+    color: white;
+}
+h1{
+    font-size: 4rem;
+}
+h4{
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.intro{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.name{
+    color: yellow;
+    font-weight: 600;
+}
+.name2{
+    color: yellow;
+    font-weight: 600;
+}
+.input1{
+font-size: 15px;
+border: none;
+padding: 8px;
+width: 90%;
+border-radius: 2rem;
+}
+.input1:active, .input1:focus{
+    background-color: white;
+    outline: none;
+}
+.bx.bx-current-location{
+    font-size:20px;
+    color: white;
+    position: relative;
+    top: 3px;
+
+}
+.button-container{
+    padding-top: 5px;
+    transition: all.45s ease;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+#button{
+    font-size: 14px;
+    padding: 5px;
+    border: l solid orangered;
+    width: 35%;
+    height: 36px;
+    border-radius: 7px;
+    transition:transform 0.12s ease-in-out;
+    border: none;
+}
+.delivery{
+    background-color: orangered;
+    color: white
+}
+.PICK-UP{
+background: whitesmoke;
+color: orangered;
+}
+.or{
+    padding-left: 16px;
+    padding-right: 13px;
+    font-size: 1.5rem;
+}
+#button:active{
+background-color: red;
+transform: scale(1.2);
+border: none;
+color: white;
+}
+
+
+/* Body Section */
+.body-section-container{
+    background-color: #ee9f9f38;
+
+}
+.first-line{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    transition: all.42s ease;
+    gap: 10px;
+}
+.delivery-box{
+    background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    color: white; 
+    border-radius: 30px;  
+    transition: transform 0.20s ease-in-out; 
+}
+.delivery-box:active{
+    transform: scale(1.1);   
+}
+figure{
+    display: flex;
+    margin: auto 0;  
+}
+#head-text{
+ margin-top: 30px;
+}
+.choice-img{
+width: 80px;
+height: auto;
+}
+#box-text{
+    padding: 10px 10px 15px 10px;  
+}
+.choice-img{
+    width: 90px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 20px;
+    
+    }
+#choice-fig {
+    padding: 10px 0px 0px 10px;
+}
+#head-text{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.767);
+    border-radius: 5px 0px 0px 20px;
+    width: 100%;
+    height: 7vh;
+    align-content: center;
+   }
+   #box-text{
+    padding: 10px 10px 15px 10px;
+    font-size: 1.6rem;  
+    text-align: center;
+}
+
+
+.second-line-section {
+    background-image: url(images/img.second-line.png);
+    background-size: cover;
+}
+.second-line-text{
+   background-color: rgba(0, 0, 0, 0.342);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+   text-align: center;
+  }
+  .line1{
+      color: whitesmoke;
+      font-size: 1.8rem;   
+  }
+  .one{
+      font-size: 100px;
+      color: red;
+  }
+  .head{
+      font-weight: 700;
+      color: aliceblue;
+  }
+  .content1{
+      padding-top: 10px;
+      font-size: 1.2rem;
+      color: aliceblue;
+     
+  }
+  .menu-box{
+      padding-top: 20px;
+  }
+   .menu-button{
+      padding: 10px;
+      border: 2px solid orangered;
+      background-color: orangered;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition:  0.09s ease-in-out;
+      width: 50%;
+   }
+   .menu-button:active {
+    transform: scale(1.1);
+    background-color: red;
+    border: none;
+   }
+
+
+#foods{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: 10px orangered underline;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.dot {
+    color: orangered;
+}
+
+
+.food-box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+    
+    
+  }
+    .food1{
+      width: 300px;
+      height: auto;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
+      border-radius: 10px;
+      background-color: #ecb9b92f;
+      background-color: rgba(0, 0, 0, 0.952);
+    }
+  
+    .burger{
+      width: 302px;
+      height: 160px;
+      margin: 0 auto;
+      border-radius: 10px 10px 0px 0px ;
+    }
+    .food-prices{
+      font-weight: 600;
+      padding-left: 5px;
+      color: white;
+    }
+  .line-through{
+      text-decoration: line-through;
+      margin-left: 10px;
+  }
+  .bxs-star{
+      color: rgb(255, 217, 0); font-size: 22px; margin-left: 120px;
+  }
+  
+.purchase-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+   padding-bottom: 5px;
+}  
+  .bxs-plus-circle {
+    font-size: 2.5rem;
+    padding-right: 10px;
+    transition: transform 0.20s ease-in-out;
+}
+.bxs-plus-circle:active {
+    transform: scale(1.1);
+    color: grey;
+}
+.order {
+width: 38%;
+height: 7vh;
+background-color: orangered;
+border: none;
+color: white;
+border-radius: 5px;
+box-shadow: 0px 0px 7px orangered;
+transition: transform 0.20s ease-in-out;
+}
+.order, .order-text {
+  color: white;
+  font-size: 1.2rem ;
+}
+.order:active {
+    transform: scale(1.1);
+    background-color: rgb(250, 156, 122);
+}
+
+.food-menu-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.food-menu-button {
+background-color: orangered;
+border: none;
+color: white;
+padding: 15px;
+border-radius: 10px;
+transition: transform 0.20s ease-in-out;
+width: 50%;
+}
+.food-menu-button:active{
+    transform: scale(1.1);
+}
+/* Footer section */
+footer {
+background-color: grey;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 10px;
+justify-content: space-between;
+}
+.contact-box {
+    padding: 0px 0px 10px 0px;
+    line-height: 1.3;
+}
+
+.our-menu-links {
+    padding: 0px 0px 10px 0px;
+    line-height: 1.3;
+    width: 50%;
+}
+
+.useful-link {
+    padding: 0px 0px 10px 0px;
+    line-height: 1.3;
+}
+
+.get-intouch {
+    line-height: 1.3; 
+    padding: 0px 0px 10px 0px;
+}
+
+.get-intouch a {
+    text-decoration: none;
+    color: rgb(75, 3, 3);
+}
+
+
+.copy-container {
+    width: 100%; 
+}
+.copy {
+   color: rgba(0, 0, 0, 0.555);  
+   text-align: center;
+   width: 100%;
+}
+
+
+/* SCREEN SIZES */
+/* MOBILE SCREEN */
+@media only screen and (min-width:360px) and (max-width: 410px) {
+    /* <-----Home section------> */
+
+
+    .section1{
+    background-image: url(images/img.hero.jpg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px 0px 50px 0px;
+}
+.main-box{
+    margin-top: 0px;
+    padding: 0px 0px 0px 5px; 
+}
+h1{
+    font-size: 4rem;
+}
+h4{
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.intro{
+    font-size: 22px;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    font-weight: 450;
+} 
+.name{
+    font-weight: 600;
+}
+.name2{
+    font-weight: 600;
+}
+.input1{
+font-size: 22px;
+border: none;
+padding: 8px;
+width: 90%;
+border-radius: 0.5rem;
+}
+
+.bx.bx-current-location{
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+
+}
+.button-container{
+    padding-top: 30px;
+    transition: all.45s ease;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+}
+#button{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 7px;
+    transition:transform 0.09s ease-in-out;
+}
+.delivery{
+    color: white;
+}
+.PICK-UP{
+background: whitesmoke;
+}
+.or{
+    padding-left: 16px;
+    padding-right: 13px;
+    font-size: 1.5rem;
+}
+#button:active{
+transform: scale(1.1);
+border: none;
+}
+
+.first-line{
+    gap: 25px;
+}
+.delivery-box{
+    background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    color: white; 
+    border-radius: 30px;  
+    transition: transform 0.20s ease-in-out; 
+}
+#head-text{
+    margin-top: 30px;
+    font-size: 1.5rem;
+   }
+   #box-text{
+    padding: 10px 10px 15px 10px;
+    font-size: 1.4rem;  
+}
+
+.line1{
+    color: whitesmoke;
+    font-size: 2.1rem;   
+}
+.head{
+    font-weight: 450;
+    color: aliceblue;
+    font-size: 2.2rem;
+}
+.content1{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.menu-button{
+    padding: 15px;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    width: 70%;
+    transition: transform 0.09s ease-in-out;
+ }
+ .menu-button:active {
+    background-color:red
+
+ }
+
+ .food1{
+    width: 340px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+  }
+
+  .burger{
+    width: 340px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px ;
+    padding-bottom: 10px;
+  }
+
+  .purchase-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+   padding-bottom: 0px;
+   padding-top: 10px;
+}
+  .food-prices{
+    font-weight: 600;
+    padding-left: 5px;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+  }
+.line-through{
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+  .bxs-plus-circle {
+    font-size: 3rem;
+    padding-right: 10px;
+    transition: transform 0.20s ease-in-out;
+}
+
+.order {
+width: 45%;
+height: 50px;
+background-color: orangered;
+border: none;
+font-size: 1.2rem;
+border-radius: 5px;
+box-shadow: 0px 0px 7px orangered;
+transition: transform 0.20s ease-in-out;
+}
+.order, .order-text {
+    color: white;
+    font-size: 1.7rem ;
+  }
+
+  .food-menu-box{
+    padding: 7px;
+}
+.food-menu-button {
+    background-color: orangered;
+    font-size: 1.2rem;
+    width: 55%;
+}
+
+/* Footer section */
+footer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    }
+.copy {
+    font-size: 1rem;
+    }    
+}
+
+
+/* Bigger Mobile eg iphones */
+@media only screen and (min-width:411px) and (max-width: 550px) {
+    .links-container a {
+        font-size: 1.7rem;
+    }
+
+    #rest-name{
+        font-weight: bold;
+        font-size: 1.9rem;
+    }
+    .logo {
+        width: 7.5rem;
+    
+        height: auto;
+    }
+
+
+    /* <-----Home section------> */
+    .section1{
+        background-image: url(images/img.hero.jpg.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 70px 0px 50px 0px;
+    }
+    .main-box{
+        margin-top: 0px;
+        padding: 0px 0px 0px 5px; 
+    }
+    h1{
+        font-size: 4.9rem;
+    }
+    h4{
+        font-weight: 400;
+        font-size: 2.9rem;
+        padding-bottom: 10px;
+    }
+    
+    .intro{
+        font-size: 29px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+        font-weight: 450;
+    } 
+    .name{
+        font-weight: 600;
+        font-size: 36px;
+        color: red;
+    }
+    .name2{
+        font-weight: 600;
+        font-size: 36px;
+        color: rgb(255, 0, 0);
+    }
+    .input1{
+    font-size: 29px;
+    border: none;
+    padding: 8px;
+    width: 90%;
+    border-radius: 0.5rem;
+    }
+    
+    .bx.bx-current-location{
+        font-size: 29px;
+        position: relative;
+        top: 3px;
+    
+    }
+    .button-container{
+        padding-top: 30px;
+        transition: all.45s ease;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #button{
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 7px;
+        transition:transform 0.15s ease-in-out;
+        width: 40%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        border: none;
+    }
+    .delivery{
+        color: white;
+    }
+    .PICK-UP{
+    background: whitesmoke;
+    }
+    .or{
+        padding-left: 16px;
+        padding-right: 13px;
+        font-size: 1.5rem;
+    }
+    #button:active{
+    transform: scale(1.1);
+    border: none;
+    }
+    
+    .first-line{
+        gap: 25px;
+    }
+    .delivery-box{
+        background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+        color: white; 
+        border-radius: 30px;  
+        transition: transform 0.20s ease-in-out; 
+    }
+    .choice-img{
+        width: 100px;
+        height: auto;
+        }
+    #head-text{
+        margin-top: 35px;
+        font-size: 1.8rem;
+        font-weight: bolder;
+       }
+       #box-text{
+        padding: 10px 10px 15px 10px;
+        font-size: 1.6rem;  
+    }
+    
+    .line1{
+        color: whitesmoke;
+        font-size: 2.4rem;   
+    }
+    .head{
+        font-weight: 450;
+        color: aliceblue;
+        font-size: 2.5rem;
+    }
+    .content1{
+        padding-top: 10px;
+        font-size: 1.7rem;
+        color: aliceblue;
+    }
+    
+    .menu-button{
+        padding: 15px;
+        border: 2px solid orangered;
+        background-color: orangered;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.4rem;
+        width: 60%;
+        transition: transform 0.3s ease-in-out;
+     }
+    
+     .food1{
+        width: 410px;
+        height: auto;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+      }
+    
+      .burger{
+        width: 415px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 10px 10px 0px 0px ;
+        padding-bottom: 10px;
+      }
+    
+      .purchase-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: center;
+       padding-bottom: 0px;
+       padding-top: 10px;
+    }
+      .food-prices{
+        font-weight: 600;
+        padding-left: 5px;
+        color: white;
+        padding-bottom: 10px;
+        font-size: 1.4rem;
+      }
+    .line-through{
+        text-decoration: line-through;
+        margin-left: 10px;
+        font-size: 1.3rem;
+    }
+    
+      .bxs-plus-circle {
+        font-size: 3rem;
+        padding-right: 10px;
+        transition: transform 0.20s ease-in-out;
+    }
+    
+    .order {
+    width: 45%;
+    height: 50px;
+    background-color: orangered;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px orangered;
+    transition: transform 0.20s ease-in-out;
+    }
+    .order, .order-text {
+        color: white;
+        font-size: 1.7rem ;
+      }
+      .bxs-star{
+        color: rgb(255, 217, 0); font-size: 22px; margin-left: 190px;
+    }
+      .food-menu-box{
+        padding: 7px;
+    }
+    .food-menu-button {
+        background-color: orangered;
+        font-size: 1.2rem;
+        width: 55%;
+    }
+    
+    /* Footer section */
+    footer {
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        }
+    .copy {
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.808);  
+        }    
+    }
+    
+/* Big Screen / small ipad */
+    @media only screen and (min-width:551px) and (max-width: 639px) {
+
+.links-container a {
+    font-size: 1.7rem;
+}
+
+#rest-name{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.logo {
+    width: 7.5rem;
+
+    height: auto;
+}
+.first-line{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    transition: all.42s ease;
+    gap: 10px;
+}
+
+/* <-----Home section------> */
+.section1{
+    background-image: url(images/img.hero.jpg.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px 0px 50px 0px;
+}
+.main-box{
+    margin-top: 0px;
+    padding: 0px 0px 0px 5px; 
+}
+h1{
+    font-size: 6rem;
+}
+h4{
+    font-weight: 400;
+    font-size: 2.9rem;
+    padding-bottom: 10px;
+}
+
+.intro{
+    font-size: 29px;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    font-weight: 450;
+} 
+.name{
+    font-weight: 600;
+    font-size: 36px;
+    color: red;
+}
+.name2{
+    font-weight: 600;
+    font-size: 36px;
+    color: rgb(255, 0, 0);
+}
+.input1{
+font-size: 29px;
+border: none;
+padding: 8px;
+width: 90%;
+border-radius: 0.5rem;
+}
+
+.bx.bx-current-location{
+    font-size: 29px;
+    position: relative;
+    top: 3px;
+
+}
+.button-container{
+    padding-top: 30px;
+    transition: all.45s ease;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+}
+#button{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 7px;
+    transition:transform 0.15s ease-in-out;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+.delivery{
+    color: white;
+}
+.PICK-UP{
+background: whitesmoke;
+}
+.or{
+    padding-left: 16px;
+    padding-right: 13px;
+    font-size: 1.5rem;
+}
+#button:active{
+transform: scale(1.1);
+border: none;
+}
+
+.first-line{
+    gap: 25px;
+}
+.delivery-box{
+    background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+    color: white; 
+    border-radius: 30px;  
+    transition: transform 0.20s ease-in-out; 
+}
+.choice-img{
+    width: 100px;
+    height: auto;
+    }
+#head-text{
+    margin-top: 35px;
+    font-size: 2rem;
+    }
+    #box-text{
+    padding: 10px 10px 15px 10px;
+    font-size: 1.6rem;  
+}
+
+.line1{
+    color: whitesmoke;
+    font-size: 3rem;   
+}
+.head{
+    font-weight: 450;
+    color: aliceblue;
+    font-size: 2.9rem;
+}
+.content1{
+    padding-top: 10px;
+    font-size: 1.9rem;
+    color: aliceblue;
+}
+
+.menu-button{
+    padding: 15px;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
+    }
+
+    
+.food-box-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+margin: 0 auto;
+padding: 10px 1px 20px 1px;
+}
+
+    .food1{
+    width: 269px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+    }
+
+    .burger{
+    width: 269px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px ;
+    padding-bottom: 10px;
+    }
+
+    .purchase-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+    .food-prices{
+    font-weight: 600;
+    padding-left: 5px;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    }
+.line-through{
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+    .bxs-plus-circle {
+    font-size: 3rem;
+    padding-right: 10px;
+    transition: transform 0.20s ease-in-out;
+}
+
+.order {
+width: 60%;
+height: 50px;
+background-color: orangered;
+border: none;
+font-size: 1.2rem;
+border-radius: 5px;
+box-shadow: 0px 0px 7px orangered;
+transition: transform 0.20s ease-in-out;
+}
+.order, .order-text {
+    color: white;
+    font-size: 1.7rem ;
+    }
+    .bxs-star{
+    color: rgb(255, 217, 0); font-size: 22px; margin-left: 190px;
+}
+    .food-menu-box{
+    padding: 7px;
+}
+.food-menu-button {
+    background-color: orangered;
+    font-size: 1.2rem;
+    width: 55%;
+}
+
+/* Footer section */
+footer {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-content: center;
+    font-size: 1.4rem;
+    gap: 20px;
+    }
+.copy {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.808);  
+    
+    } 
+    .copy-container {
+        width: 200%; 
+        display: flex;
+        justify-content: center;
+    }
+    .get-intouch a {
+        text-decoration: none;
+        color: rgb(75, 3, 3);
+        font-size: 1rem;
+    }      
+}
+
+/* bigger screen size ipad  */
+@media only screen and (min-width:640px) and (max-width: 740px){
+.links-container a {
+font-size: 1.7rem;
+}
+
+#rest-name{
+font-weight: bold;
+font-size: 1.9rem;
+}
+.logo {
+width: 7.5rem;
+
+height: auto;
+}
+.first-line{
+display: flex;
+flex-direction: column;
+padding: 20px 20px;
+transition: all.42s ease;
+gap: 10px;
+}
+
+/* <-----Home section------> */
+.section1{
+background-image: url(images/img.hero.jpg.jpg);
+width: 100%;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding: 70px 0px 50px 0px;
+}
+.main-box{
+margin-top: 0px;
+padding: 0px 0px 0px 5px; 
+}
+h1{
+font-size: 6rem;
+}
+h4{
+font-weight: 400;
+font-size: 2.9rem;
+padding-bottom: 10px;
+}
+
+.intro{
+font-size: 29px;
+padding-bottom: 15px;
+line-height: 1.5;
+font-weight: 450;
+} 
+.name{
+font-weight: 600;
+font-size: 36px;
+color: red;
+}
+.name2{
+font-weight: 600;
+font-size: 36px;
+color: rgb(255, 0, 0);
+}
+.input1{
+font-size: 29px;
+border: none;
+padding: 8px;
+width: 90%;
+border-radius: 0.5rem;
+}
+
+.bx.bx-current-location{
+font-size: 29px;
+position: relative;
+top: 3px;
+
+}
+.button-container{
+padding-top: 30px;
+transition: all.45s ease;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+width: 85%;
+justify-content: space-around;
+align-items: center;
+}
+#button{
+font-size: 25px;
+padding: 5px;
+border-radius: 7px;
+transition:transform 0.15s ease-in-out;
+width: 40%;
+height: auto;
+text-align: center;
+align-items: center;
+border: none;
+}
+.delivery{
+color: white;
+}
+.PICK-UP{
+background: whitesmoke;
+}
+.or{
+padding-left: 16px;
+padding-right: 13px;
+font-size: 1.5rem;
+}
+#button:active{
+transform: scale(1.1);
+border: none;
+}
+
+.first-line{
+gap: 25px;
+}
+.delivery-box{
+background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+color: white; 
+border-radius: 30px;  
+transition: transform 0.20s ease-in-out; 
+}
+.choice-img{
+width: 100px;
+height: auto;
+}
+#head-text{
+margin-top: 35px;
+font-size: 2rem;
+}
+#box-text{
+padding: 10px 10px 15px 10px;
+font-size: 1.6rem;  
+}
+
+.line1{
+color: whitesmoke;
+font-size: 3rem;   
+}
+.head{
+font-weight: 450;
+color: aliceblue;
+font-size: 2.9rem;
+}
+.content1{
+padding-top: 10px;
+font-size: 1.9rem;
+color: aliceblue;
+}
+
+.menu-button{
+padding: 15px;
+border: 2px solid orangered;
+background-color: orangered;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.6rem;
+width: 60%;
+transition: transform 0.3s ease-in-out;
+}
+
+
+.food-box-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+gap: 2rem 1rem;
+margin: 0 auto;
+padding: 10px 1px 20px 1px;
+}
+
+.food1{
+width: 300px;
+height: auto;
+box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+}
+
+.burger{
+width: 300px;
+height: 200px;
+margin: 0 auto;
+border-radius: 10px 10px 0px 0px ;
+padding-bottom: 10px;
+}
+
+.purchase-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 0px;
+padding-top: 10px;
+}
+.food-prices{
+font-weight: 600;
+padding-left: 5px;
+color: white;
+padding-bottom: 10px;
+font-size: 1.4rem;
+}
+.line-through{
+text-decoration: line-through;
+margin-left: 10px;
+font-size: 1.3rem;
+}
+
+.bxs-plus-circle {
+font-size: 3rem;
+padding-right: 10px;
+transition: transform 0.20s ease-in-out;
+}
+
+.order {
+width: 60%;
+height: 50px;
+background-color: orangered;
+border: none;
+font-size: 1.2rem;
+border-radius: 5px;
+box-shadow: 0px 0px 7px orangered;
+transition: transform 0.20s ease-in-out;
+}
+.order, .order-text {
+color: white;
+font-size: 1.7rem ;
+}
+.bxs-star{
+color: rgb(255, 217, 0); font-size: 22px; margin-left: 190px;
+}
+.food-menu-box{
+padding: 7px;
+}
+.food-menu-button {
+background-color: orangered;
+font-size: 1.2rem;
+width: 55%;
+}
+
+/* Footer section */
+footer {
+background-color: grey;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 10px;
+justify-content: center;
+font-size: 1.4rem;
+gap: 0px;
+}
+.copy {
+font-size: 1.2rem;
+color: rgba(0, 0, 0, 0.808);  
+
+} 
+.copy-container {
+    width: 200%; 
+    display: flex;
+    justify-content: center;
+}
+.get-intouch a {
+    text-decoration: none;
+    color: rgb(75, 3, 3);
+    font-size: 1.2rem;
+}      
+
+
+
+}
+
+@media only screen and (min-width:741px) and (max-width: 1000px) {
+.links-container a {
+font-size: 1.7rem;
+}
+
+#rest-name{
+font-weight: bold;
+font-size: 1.9rem;
+}
+.logo {
+width: 7.5rem;
+
+height: auto;
+}
+.first-line{
+display: flex;
+flex-direction: column;
+padding: 20px 20px;
+transition: all.42s ease;
+gap: 10px;
+}
+
+/* <-----Home section------> */
+.section1{
+background-image: url(images/img.hero.jpg.jpg);
+width: 100%;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding: 70px 0px 50px 0px;
+}
+.main-box{
+margin-top: 0px;
+padding: 0px 0px 0px 5px; 
+}
+h1{
+font-size: 6rem;
+}
+h4{
+font-weight: 400;
+font-size: 2.9rem;
+padding-bottom: 10px;
+}
+
+.intro{
+font-size: 29px;
+padding-bottom: 15px;
+line-height: 1.5;
+font-weight: 450;
+} 
+.name{
+font-weight: 600;
+font-size: 36px;
+color: red;
+}
+.name2{
+font-weight: 600;
+font-size: 36px;
+color: rgb(255, 0, 0);
+}
+.input1{
+font-size: 29px;
+border: none;
+padding: 8px;
+width: 90%;
+border-radius: 0.5rem;
+}
+
+.bx.bx-current-location{
+font-size: 29px;
+position: relative;
+top: 3px;
+
+}
+.button-container{
+padding-top: 30px;
+transition: all.45s ease;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+width: 85%;
+justify-content: space-around;
+align-items: center;
+}
+#button{
+font-size: 25px;
+padding: 15px;
+border-radius: 7px;
+transition:transform 0.15s ease-in-out;
+width: 25%;
+height: auto;
+text-align: center;
+align-items: center;
+border: none;
+}
+.delivery{
+color: white;
+}
+.PICK-UP{
+background: whitesmoke;
+
+}
+.or{
+padding-left: 16px;
+padding-right: 13px;
+font-size: 2rem;
+font-weight: bold;
+}
+#button:active{
+transform: scale(1.1);
+border: none;
+}
+
+.first-line{
+gap: 25px;
+}
+.first-line {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.first-line {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+column-gap: 15px;
+
+}     
+
+.delivery-box{
+background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+color: white; 
+border-radius: 30px;  
+transition: transform 0.20s ease-in-out;
+max-width: 31%;
+}
+.choice-img{
+width: 90px;
+height: auto;
+background-color: rgba(0, 0, 0, 0.747);
+border-radius: 20px;
+
+}
+#choice-fig {
+padding: 10px 0px 0px 10px;
+}
+#head-text{
+margin-top: 40px;
+margin-left: 10px;
+font-size: 1rem;
+text-align: center;
+background-color: rgba(255, 0, 0, 0.767);
+border-radius: 5px 0px 0px 20px;
+width: 100%;
+height: 7vh;
+align-content: center;
+}
+#box-text{
+padding: 10px 10px 15px 10px;
+font-size: 1.6rem;  
+text-align: center;
+}
+
+
+.line1{
+color: whitesmoke;
+font-size: 3rem;   
+}
+.head{
+font-weight: 450;
+color: aliceblue;
+font-size: 2.9rem;
+}
+.content1{
+padding-top: 10px;
+font-size: 1.9rem;
+color: aliceblue;
+}
+
+.menu-button{
+padding: 15px;
+border: 2px solid orangered;
+background-color: orangered;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.6rem;
+width: 40%;
+transition: transform 0.09s ease-in-out;
+}
+
+
+.food-box-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+gap: 2rem 1rem;
+margin: 0 auto;
+padding: 10px 1px 20px 1px;
+}
+
+.food1{
+width: 300px;
+height: auto;
+box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+}
+
+.burger{
+width: 300px;
+height: 200px;
+margin: 0 auto;
+border-radius: 10px 10px 0px 0px ;
+padding-bottom: 10px;
+}
+
+.purchase-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 0px;
+padding-top: 10px;
+}
+.food-prices{
+font-weight: 600;
+padding-left: 5px;
+color: white;
+padding-bottom: 10px;
+font-size: 1.4rem;
+}
+.line-through{
+text-decoration: line-through;
+margin-left: 10px;
+font-size: 1.3rem;
+}
+
+.bxs-plus-circle {
+font-size: 3rem;
+padding-right: 10px;
+transition: transform 0.20s ease-in-out;
+}
+
+.order {
+width: 60%;
+height: 50px;
+background-color: orangered;
+border: none;
+font-size: 1.2rem;
+border-radius: 5px;
+box-shadow: 0px 0px 7px orangered;
+transition: transform 0.20s ease-in-out;
+}
+.order, .order-text {
+color: white;
+font-size: 1.7rem ;
+}
+.bxs-star{
+color: rgb(255, 217, 0); font-size: 22px;
+    margin-left: 220px;
+    margin-top: 0px;
+}
+.food-menu-box{
+padding: 7px;
+}
+.food-menu-button {
+background-color: orangered;
+font-size: 1.9rem;
+width: 40%;
+}
+
+/* Footer section */
+footer {
+background-color: grey;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 10px;
+justify-content: center;
+font-size: 1.4rem;
+gap: 0px;
+}
+.copy {
+font-size: 1.2rem;
+color: rgba(0, 0, 0, 0.808);  
+
+} 
+.copy-container {
+    width: 200%; 
+    display: flex;
+    justify-content: center;
+}
+.get-intouch a {
+    text-decoration: none;
+    color: rgb(75, 3, 3);
+    font-size: 1.2rem;
+} 
+
+}
+
+/* LARGER SCREEN */
+@media only screen and (min-width:1001px) and (max-width: 1600px) {
+header {
+height: 19vh;
+}
+.logo-box {
+display: flex;
+align-items: center;
+padding: 10px;
+}   
+.logo {
+width: 7rem;
+}
+.contact-button {
+display: block;
+font-size: 1.2rem;
+padding: 10px;
+border-radius: 35px;
+border: none;
+background-color: red;
+color: white;
+transition: transform 0.20s ease-in-out;
+}
+.contact-house {
+display: block;
+padding-right: 20px;
+
+}
+.contact-button:active {
+transform: scale(1.1);
+}  
+.contact-button:hover {
+transform: scale(1.1);
+}  
+.links-container {
+display: flex;
+flex-direction: row;
+align-items: normal;
+position: relative;
+top: 0;
+right: 0;
+z-index: 10;
+width: 100%;
+height: auto;
+background-color: transparent;
+transition:0.50s ease-in-out;
+}
+.open-sidebar-button, .close-sidebar-button{
+display: none;
+}    
+nav {
+height: 8vh;
+display: flex;
+justify-content: center;
+align-items: normal;
+
+}
+.links-container a {
+height: 8vh;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-decoration: none;
+box-sizing: border-box;
+transition: 0.30s ease-in-out;
+color: black; 
+background-color: none;
+width: 100%;
+padding: 20px;
+font-size: 1.2rem;
+font-weight: bold;
+
+}
+.links-container a:hover {
+color: red;
+background-color: rgba(255, 0, 0, 0.13);
+border-radius: 20px;
+/* border: 0.01px solid red; */
+transition: all 0.30s ease-in-out;
+height: 10vh;
+}
+#sidebar-active:checked ~ .links-container{
+right: none;
+}
+#sidebar-active:checked ~ #overlay {
+
+height: 100%;
+width: 100%;
+position: relative;
+top: 0;
+right: 0;
+z-index: 0;
+}
+    /* <-----Home section------> */
+    .section1{
+        background-image: url(images/img.hero.jpg.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 70px 0px 50px 0px;
+    }
+    .main-box{
+        margin-top: 0px;
+        padding: 0px 0px 0px 5px; 
+        width: 70%;
+    }
+    h1{
+        font-size: 5rem;
+        margin-left: 27px;
+    }
+    h4{
+        font-weight: 400;
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+        margin-left: 27px;
+    }
+    
+    .intro{
+        font-size: 25px;
+        padding-bottom: 15px;
+        line-height: 1.5;
+        font-weight: 450;
+        margin-left: 27px;
+    } 
+    .name{
+        font-weight: 600;
+        font-size: 28px;
+        color: red;
+    }
+    .name2{
+        font-weight: 600;
+        font-size: 28px;
+        color: rgb(255, 0, 0);
+    }
+    .input1{
+    font-size: 25px;
+    border: none;
+    padding: 8px;
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-left: 27px;
+    }
+    
+    .bx.bx-current-location{
+        font-size: 29px;
+        position: relative;
+        top: 3px;
+    
+    }
+    .button-container{
+        padding-top: 30px;
+        transition: all.45s ease;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+    }
+    #button{
+        font-size: 25px;
+        padding: 4px;
+        border-radius: 7px;
+        transition:transform 0.30s ease-in-out;
+        width: 30%;
+        height: 7vh;
+        text-align: center;
+        align-items: center;
+        border: none;
+    
+    }
+    .delivery{
+        color: white;
+    }
+    .PICK-UP{
+    background: whitesmoke;
+    }
+    .or{
+        padding-left: 16px;
+        padding-right: 13px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #button:active{
+    background-color: red; 
+    border: none;
+    }
+    #button:hover{
+        transform: scale(1.1);  
+    }
+    .first-line {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 15px;
+        
+        }
+        .delivery-box{
+            background-image: linear-gradient(rgba(240, 240, 7, 0.849), rgba(247, 10, 109, 0.801) ) ;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.603);
+            color: white; 
+            border-radius: 30px;  
+            transition: transform 0.35s ease-in-out;
+            max-width: 31%;
+        }
+        .delivery-box:hover {
+            transform: scale(1.06);
+        }
+        .choice-img{
+            width: 90px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.747);
+            border-radius: 20px;
+            
+            }
+        #choice-fig {
+            padding: 10px 0px 0px 10px;
+        }
+        #head-text{
+            margin-top: 40px;
+            margin-left: 40px;
+            padding-left: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+            align-items: center;
+            background-color: rgba(255, 0, 0, 0.767);
+            border-radius: 5px 0px 0px 20px;
+            width: 100%;
+            height: 7vh;
+            align-items: center;
+            display: flex;
+            
+            }
+            #box-text{
+            padding: 10px 10px 15px 10px;
+            font-size: 1.6rem;  
+            text-align: center;
+        }
+        .line1{
+            color: whitesmoke;
+            font-size: 3rem;   
+        }
+        .head{
+            font-weight: 450;
+            color: aliceblue;
+            font-size: 2.9rem;
+        }
+        .content1{
+            padding-top: 10px;
+            font-size: 1.5rem;
+            color: aliceblue;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .menu-button{
+            padding: 15px;
+            border: 2px solid orangered;
+            background-color: orangered;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.6rem;
+            width: 25%;
+            transition: transform 0.3s ease-in-out;
+            }
+            .menu-button:hover {
+            transform: scale(1.1);
+            }
+            .menu-button:active {
+            transform: scale(1.3);
+            background-color: red;
+            outline: none;
+            }
+            .food-box-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem 1rem;
+            margin: 0 auto;
+            padding: 10px 1px 20px 1px;
+            }
+                    
+                        .food1{
+                        width: 300px;
+                        height: auto;
+                        box-shadow: 0px 0px 10px rgb(0, 0, 0);  
+                        }
+                    
+                        .burger{
+                        width: 300px;
+                        height: 200px;
+                        margin: 0 auto;
+                        border-radius: 10px 10px 0px 0px ;
+                        padding-bottom: 10px;
+                        }
+                    
+                        .purchase-container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 0px;
+                        padding-top: 10px;
+                    }
+                        .food-prices{
+                        font-weight: 600;
+                        padding-left: 5px;
+                        color: white;
+                        padding-bottom: 10px;
+                        font-size: 1.4rem;
+                        }
+                        .bxs-star{
+                        color: rgb(255, 217, 0); font-size: 22px; margin-left: 60px;
+
+                    }   
+                        .food-menu-button {
+                            background-color: orangered;
+                            font-size: 1.5rem;
+                            width: 25%;
+                            transition: transform 0.3s ease-in-out;
+                        }                       
+
+            .food-menu-button:hover {
+                transform: scale(1.1);
+            }
+            .food-menu-button:active {
+                background-color: red;
+            }        
+
+
+            footer {
+                background-color: grey;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding: 10px;
+                justify-content: center;
+                font-size: 1.4rem;
+                gap: 0px;
+                }
+            .copy {
+                font-size: 1.2rem;
+                color: rgba(0, 0, 0, 0.808);  
+                
+                } 
+                .copy-container {
+                    width: 400%; 
+                    display: flex;
+                    justify-content: center;
+                }
+                .get-intouch a {
+                    text-decoration: none;
+                    color: rgb(75, 3, 3);
+                    font-size: 1.2rem;
+                }     
+}

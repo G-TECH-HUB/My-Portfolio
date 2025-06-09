@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo App</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="todo-body">
+   <div class="todo-container">
+      <div class="status-container">
+         <div class="heading-text-container">
+            <h1>Todo App</h1>
+            <p>You've got this! Crush your task!</p>
+
+            <div class="progress-bar">
+               <div class="progress">  
+               </div>
+            </div>
+            
+         </div>
+         <div class="status-update">
+              <div class="number-circle">
+               <i class='bx bx-list-check' style="font-size: 4em;"></i>
+            </div>
+         </div>
+      </div>
+
+      <div class="input-container">
+         <form action="">
+            <input type="text" placeholder="Input your task...|" id="input-task" title="Input Task">
+            <button type="submit" id="add-task" title="Add Task"><i class='bx bx-task'></i></button>
+         </form>
+      </div>
+
+
+   </div>
+      <ul id="task-list">
+
+      </ul>
+
+</div>
+   <script src="App.js"></script>
+</body>
+</html>

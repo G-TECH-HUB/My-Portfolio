@@ -1,0 +1,129 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+} */
+/* Head banner section */
+/* .box{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: rgba(0, 0, 0, 0.575);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+     background-image: linear-gradient(rgb(240, 240, 7), rgb(243, 153, 153));
+}
+.logo{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    max-width: 110px;
+}
+.top-name{
+    position: relative;
+    bottom: 15px;
+    left: 5px;  
+}
+.navmenu{
+display: flex;
+}
+.navmenu a{
+    padding: 10px 20px;
+    color: #292929;
+    text-transform: capitalize;
+    font-weight: 550;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: red;
+}
+
+.contact-button{
+    display: inline-block;
+text-transform: capitalize;
+font-size: 16px;
+font-weight: 550;
+border: 2px solid red;
+padding: 10px 20px;
+background-color: red; 
+color: white;
+margin-right: 15px;
+border-radius: 30px;
+transition: all.42s ease;
+}
+.contact-box .contact-button:hover{
+    transform: scale(1.1);
+}
+
+section{
+
+   
+}
+.containerabout{
+  background-image: url(images/pexels-asadphoto-1591375.jpg);
+  background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+.aboutus-box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 60%;
+   height: 75vh;
+   background-color: rgba(0, 0, 0, 0.733);
+   line-height: 35px;
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   border-radius: 20px;
+
+}
+.about{
+text-align: center;
+padding: 20px;
+font-size: 40px;
+}
+footer{
+
+    background-color: #02001d79;
+       height: 48vh;
+   }
+   .footer-container{
+       display: grid;
+       grid-template-columns:repeat(4, 1fr);
+       max-width: 95%;
+       margin: 0 auto;
+       height: 40vh;
+       padding-top: 20px;
+   }
+   .copy{
+       margin-top: 100px;
+       color: #1c1c1dd2;
+       font-size: 14px;
+   }
+   .line-one{
+   
+   padding-top: 10px;
+   line-height: 25px;
+   } */
